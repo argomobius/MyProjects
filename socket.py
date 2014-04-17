@@ -34,3 +34,32 @@ except socket.error, msg:
 	sys.exit();
 
 print 'Socket Connected to ' + host + ' on IP ' + remote_ip	
+
+#Message to be sent
+
+message = "GET / HTTP/1.1\r\n\r\n"
+
+#send the whole message
+
+
+try: 
+	s.sendall(message)
+
+except socket.error:
+	print 'Send failed'
+	sys.exit();
+
+print 'Message sent'	
+
+try: 
+	reply = s.recv(4096)
+
+except socket.error:
+	print 'Receive failed'
+	sys.exit();	
+
+print reply	
+
+
+
+
