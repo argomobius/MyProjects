@@ -1,0 +1,16 @@
+Python Projects
+
+
+-write an echo server using sockets
+
+-write a server using sockets when it gets a TCP connection, returns "Head" or "Tails" randomly
+	-test using Telnet
+
+-In any language, write a simple web server using sockets
+
+-Using a raw packet library (e.e scapy) create and send a ping packet. Use a packet sniffer to see a response.
+
+
+-Using sockets, send a DNS request. Display result.
+
+-Using sockets, write a client/server where a server tells client to guess a # between 1 and X (where X is random). Client prompts user (i.e. higher, lower), server responds w hint. Client keeps guessing until correct.
