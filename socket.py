@@ -10,8 +10,8 @@ except socket.error, msg:
 
 print 'Socket Created'
 
-host = 'www.cnn.com'
-port = 80
+host = 'localhost'
+port = 8895
 
 try:
 	remote_ip = socket.gethostbyname(host)
