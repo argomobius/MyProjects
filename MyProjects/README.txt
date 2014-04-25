@@ -1,0 +1,1 @@
+This is a general repo for my noob projects in Python and Ruby. Feel free to play around and improve my code.

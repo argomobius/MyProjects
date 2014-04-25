@@ -1,0 +1,3 @@
+[http]
+[http]
+	proxy = http://proxyout.lanl.gov:8080
