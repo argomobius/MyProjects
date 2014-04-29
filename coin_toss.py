@@ -27,18 +27,23 @@ s.listen(10)
 
 print 'Socket now listening'
 
+def coin():
+	result = random.randrange(1,3)
+	if result == 1:
+		coin == "Heads!"
+	else:
+		coin == "Tails!"
+
 
 def clientthread(conn):
 
-	conn.send('Welcome to the echo server. Type something and hit enter \n')
-
-	data = ''
+	conn.send('Welcome to the RNG server. Hit enter \n')
 
 	while True:
 
-		data += conn.recv(1096)
+		coin()
 		
-		conn.send(data)	
+		conn.send(coin)	
 
 	conn.close()
 
@@ -54,12 +59,6 @@ while 1:
 s.close()
 
 
-#def coin():
-	result = random.randrange(1,3)
-	if result == 1:
-		print "Heads!"
-	else:
-		print "Tails!"
 
 
 
